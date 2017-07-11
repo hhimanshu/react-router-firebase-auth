@@ -1,12 +1,13 @@
 import firebase from 'firebase'
 
 const config = {
-  apiKey: "AIzaSyDHL6JFTyBcaV60WpE4yXfeO0aZbzA9Xbk",
-  authDomain: "practice-auth.firebaseapp.com",
-  databaseURL: "https://practice-auth.firebaseio.com",
-}
+    apiKey: "AIzaSyCFRg1l-4N6JAhkLq4m33VDNtiTJPETlVs",
+    authDomain: "hhimanshu-test.firebaseapp.com",
+    databaseURL: "https://hhimanshu-test.firebaseio.com",
+};
 
-firebase.initializeApp(config)
+firebase.initializeApp(config);
 
-export const ref = firebase.database().ref()
-export const firebaseAuth = firebase.auth
+export const provider = new firebase.auth.GoogleAuthProvider();
+export const ref = firebase.database().ref();
+export const firebaseAuth = firebase.auth;
